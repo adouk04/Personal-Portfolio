@@ -1,6 +1,11 @@
 # Build log
 
-This file records how I worked with an AI coding assistant on the portfolio. It is intentionally concise; the goal is to preserve the decisions and changes, not every generated token.
+This file records how I worked with AI chat tools on the portfolio. It is intentionally concise; the goal is to preserve the decisions and changes, not every generated token.
+
+## Tools used
+
+- **ChatGPT**: used first to build the initial version of the portfolio.
+- **Claude**: I switched to Claude partway through to make the design changes and polish the site.
 
 ## Session 1 — October 11, 2026
 

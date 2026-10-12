@@ -32,8 +32,8 @@ window.PORTFOLIO_DATA = {
       tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
       reflectionLabel: "What I learned",
       reflection:
-        "I learned that a useful prompt is less about naming a visual style and more about defining the job the site needs to do. Separating the artifact content from the layout also made the portfolio easier to maintain for the rest of the quarter.",
-      url: "#top",
+        "I learned that a useful prompt is less about naming a visual style and more about defining the job the site needs to do. Separating the artifact content from the layout also made the portfolio easier to maintain for the rest of the quarter. I started the build with ChatGPT and later switched to Claude to make the design changes.",
+      url: "https://github.com/adouk04/Personal-Portfolio",
     },
     {
       number: "02",
