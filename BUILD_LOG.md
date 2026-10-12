@@ -7,6 +7,19 @@ This file records how I worked with AI chat tools on the portfolio. It is intent
 - **ChatGPT**: used first to build the initial version of the portfolio.
 - **Claude**: I switched to Claude partway through to make the design changes and polish the site.
 
+## Prompts I used
+
+**Prompt 1**
+
+> https://cfb3.github.io/TCSS490-26-AUTUMN/weeks/week-1/
+> https://cfb3.github.io/TCSS490-26-AUTUMN/assignments/artifact-1/#details
+> https://github.com/adouk04/Personal-Portfolio
+> check this website and build the entire thing necessary. let me know what you need me to do, i also created a repo you can add to
+
+**Prompt 2**
+
+> choose a different color wave. i like the layout of the site but use a  more appealing colorwave
+
 ## Session 1 — October 11, 2026
 
 ### What I asked for
