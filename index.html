@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alex's TCSS 490 build portfolio — five artifacts documenting a quarter of learning with generative AI."
+    />
+    <meta name="theme-color" content="#142c2b" />
+    <meta property="og:title" content="Alex — Building in Public" />
+    <meta
+      property="og:description"
+      content="A living portfolio for TCSS 490: five builds, honest reflections, and what comes next."
+    />
+    <title>Alex — Building in Public</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site-data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Skip to the work</a>
+
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="Alex, back to top">
+        <span class="wordmark-mark" aria-hidden="true">A/</span>
+        <span>Alex builds</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#work">Artifacts</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+        <span aria-hidden="true">◐</span>
+        <span class="theme-label">Night</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> TCSS 490 · Autumn 2026</p>
+          <h1 id="hero-title">I build useful things and show my work.</h1>
+          <p class="hero-intro" id="profile-intro">
+            I’m Alex, a software developer interested in mobile products, practical AI, and systems that make complicated decisions easier to understand.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore the artifacts <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" data-profile-link="github" href="https://github.com/adouk04">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Five artifact slots, one currently complete">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="artifact-dial">
+            <p>Quarter progress</p>
+            <strong><span data-complete-count>1</span><small>/05</small></strong>
+            <span>artifacts live</span>
+          </div>
+          <span class="dial-note note-one">build</span>
+          <span class="dial-note note-two">reflect</span>
+          <span class="dial-note note-three">repeat</span>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Areas of interest">
+        <div class="marquee-track" data-interests>
+          <span>Mobile products</span><i>✦</i><span>Explainable AI</span><i>✦</i><span>Civic tech</span><i>✦</i><span>Fintech</span><i>✦</i><span>Human-centered systems</span>
+        </div>
+      </section>
+
+      <section class="about section-shell" id="about" aria-labelledby="about-title">
+        <div class="section-kicker">
+          <span>01</span>
+          <p>About the builder</p>
+        </div>
+        <div class="about-grid">
+          <h2 id="about-title">Curious about the space between a good idea and a product people can trust.</h2>
+          <div class="about-copy">
+            <p id="profile-about">
+              My favorite projects turn messy, real-world information into a clear next step. I have worked on mobile experiences spanning safer navigation and financial decision-making, and I care about the backend logic that makes those experiences reliable.
+            </p>
+            <p>
+              This site is my field notebook for TCSS 490. Each card captures what I built, how the process went, and what I learned while working alongside generative AI.
+            </p>
+          </div>
+          <dl class="about-facts" data-facts>
+            <div><dt>Focus</dt><dd>Practical, understandable software</dd></div>
+            <div><dt>Current mode</dt><dd>Learning by shipping</dd></div>
+            <div><dt>Based near</dt><dd>University of Washington Tacoma</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="artifacts section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div class="section-kicker">
+            <span>02</span>
+            <p>The quarter in five builds</p>
+          </div>
+          <div>
+            <h2 id="work-title">Artifacts, not assignments.</h2>
+            <p>One living record of experiments, decisions, detours, and things that finally worked.</p>
+          </div>
+        </div>
+
+        <div class="artifact-list" id="artifact-list" aria-live="polite">
+          <noscript>This portfolio needs JavaScript enabled to display the artifact cards.</noscript>
+        </div>
+      </section>
+
+      <section class="process section-shell" aria-labelledby="process-title">
+        <div class="section-kicker">
+          <span>03</span>
+          <p>Working method</p>
+        </div>
+        <div class="process-grid">
+          <div>
+            <h2 id="process-title">Build with the model.<br />Verify like a human.</h2>
+            <p>I use AI as a fast collaborator, then slow down around judgment: scope, claims, accessibility, edge cases, and whether the result actually helps.</p>
+          </div>
+          <ol class="process-steps">
+            <li><span>01</span><div><strong>Frame it</strong><p>Define the user, the friction, and what “done” means.</p></div></li>
+            <li><span>02</span><div><strong>Make it</strong><p>Prompt, prototype, test, and keep a record of the turns.</p></div></li>
+            <li><span>03</span><div><strong>Interrogate it</strong><p>Check the output against the goal instead of trusting the demo.</p></div></li>
+            <li><span>04</span><div><strong>Reflect</strong><p>Capture what changed in both the artifact and my own approach.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow"><span></span> Next build starts here</p>
+        <h2 id="contact-title">Want to compare notes?</h2>
+        <p>I’m always interested in thoughtful software, ambitious prototypes, and the people building them.</p>
+        <div class="contact-links">
+          <a data-profile-link="github" href="https://github.com/adouk04">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="#work">See the work <span aria-hidden="true">↑</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Designed and built with an AI collaborator by <span data-profile-name>Alex</span>.</p>
+      <p>TCSS 490 · <span data-year>2026</span></p>
+    </footer>
+
+    <template id="artifact-template">
+      <article class="artifact-card">
+        <div class="artifact-number"></div>
+        <div class="artifact-main">
+          <div class="artifact-meta">
+            <span class="artifact-status"></span>
+            <span class="artifact-kind"></span>
+          </div>
+          <h3 class="artifact-title"></h3>
+          <p class="artifact-summary"></p>
+          <ul class="artifact-tags" aria-label="Project themes"></ul>
+        </div>
+        <div class="artifact-reflection">
+          <p class="reflection-label"></p>
+          <p class="reflection-copy"></p>
+          <a class="artifact-link" href="#">View artifact <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </template>
+  </body>
+</html>
