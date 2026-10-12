@@ -25,6 +25,7 @@ This file records how I worked with an AI coding assistant on the portfolio. It 
 - Added five artifact cards. Artifact 1 is complete; Artifacts 2–5 contain initial ideas connected to my interests in mobile products, AI, civic tech, and fintech.
 - Centralized all editable profile and artifact content in `site-data.js` so future updates do not require layout changes.
 - Added repository documentation, a smoke test, and a GitHub Pages deployment workflow.
+- Updated the deployment workflow to enable GitHub Pages automatically on its first successful run.
 
 ### Decisions and revisions
 
