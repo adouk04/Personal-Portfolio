@@ -37,16 +37,16 @@ window.PORTFOLIO_DATA = {
     },
     {
       number: "02",
-      status: "Idea",
+      status: "Complete",
       kind: "Something I will use",
-      title: "Courseflow",
+      title: "NFL Game Simulator",
       summary:
-        "A personal command center that turns course deadlines, project notes, and weekly priorities into one calm, actionable view instead of five scattered tabs.",
-      tags: ["Productivity", "Personal tool", "Information design"],
-      reflectionLabel: "What I want to learn",
+        "Pick any two of the 32 NFL teams and play out a full game play by play to see the final score and player stats, or play 1,000 games to see each team's win odds. It runs from the command line and as a web page.",
+      tags: ["Python", "Pyodide", "GitHub Actions", "GitHub Pages"],
+      reflectionLabel: "What I learned",
       reflection:
-        "I want to learn where automation genuinely reduces cognitive load and where a simpler manual workflow is actually better.",
-      url: "",
+        "It was impressive how much AI could find and pull together, like team stats and starting lineups from so many different sources. I also learned that it can't do everything in one prompt unless the prompt is very detailed, so I got better results by building in steps and checking each one.",
+      url: "https://github.com/adouk04/artifact-2-repo",
     },
     {
       number: "03",
