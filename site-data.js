@@ -54,7 +54,7 @@ window.PORTFOLIO_DATA = {
       kind: "AI inside it",
       title: "Spending Sorter",
       summary:
-        "A terminal tool that sorts a bank export into spending categories. Claude labels each transaction from its description only, never the amounts or dates. Plain code reads the file, checks every label, flags anything unsure or inconsistent with whether money came in or went out, computes all totals in cents, and verifies the output before saving it.",
+        "A terminal tool that sorts a bank export into spending categories. Claude labels each transaction from its description only, never the amounts or dates. Plain code reads the file, checks every label, flags anything unsure or inconsistent with whether money came in or went out, computes all totals in cents, and verifies the output before saving it. It also reports a weekly spending pace and heads-up flags, and an optional summary written by Claude is rejected if it uses any number the code did not compute.",
       tags: ["Node.js", "Claude Code (claude -p)", "Structured output", "Fintech"],
       reflectionLabel: "What I learned",
       reflection:

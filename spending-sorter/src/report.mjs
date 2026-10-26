@@ -63,7 +63,7 @@ export function renderSummary(items, summary) {
     "",
     `Money in   ${padL(formatCents(summary.inCents, { plus: true }), 12)}`,
     `Money out  ${padL(formatCents(summary.outCents), 12)}`,
-    `Net        ${padL(formatCents(summary.net, { plus: true }), 12)}`,
+    `Net (all rows, incl. transfers) ${padL(formatCents(summary.net, { plus: true }), 10)}`,
     "",
     summary.reconciles
       ? "Check: category totals add up to the file total."

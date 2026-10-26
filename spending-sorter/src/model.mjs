@@ -18,9 +18,9 @@ export function runClaude(message, options = {}) {
     "--output-format",
     "json",
     "--json-schema",
-    JSON.stringify(resultsJsonSchema),
+    JSON.stringify(options.schema || resultsJsonSchema),
     "--system-prompt",
-    SYSTEM_PROMPT,
+    options.system || SYSTEM_PROMPT,
     "--tools", // the model gets no tools: it can only read the message and answer
     "",
     "--no-session-persistence",

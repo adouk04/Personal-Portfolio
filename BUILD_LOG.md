@@ -71,6 +71,7 @@ This file records how I worked with AI chat tools on the portfolio. It is intent
 The full plan, decisions, and verification for this artifact are in [`spending-sorter/LOG.md`](spending-sorter/LOG.md). Summary:
 
 - Built *Spending Sorter*, a terminal tool that runs `claude -p` headless. The model labels transaction descriptions (never amounts); plain code validates the labels, applies sign rules, does the money math in cents, and verifies the output file.
+- Added a weekly pace, rule-based heads-up flags, and an optional `--outlook` summary. The summary describes spending and is not financial advice; the code rejects it if it uses a number it was not given.
 - Filled in the Artifact 3 card in `site-data.js` and marked it Complete.
 - Fixed `tests/smoke.mjs`, which still expected only one completed artifact.
 - The first build for this artifact was a different idea (*Explain It Back*, from the placeholder card). I replaced it with this one; it remains in git history only.

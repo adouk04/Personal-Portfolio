@@ -15,6 +15,23 @@ let stdin = "";
 for await (const chunk of process.stdin) stdin += chunk;
 if (process.env.FAKE_CAPTURE) writeFileSync(process.env.FAKE_CAPTURE, stdin);
 
+if (stdin.includes("<facts>")) {
+  const f = JSON.parse(stdin.split("<facts>")[1].split("</facts>")[0]);
+  const om = process.env.FAKE_OUTLOOK_MODE || "good";
+  const first = (extra) => ({
+    headline: "Spending check",
+    summary: `Over ${f.period.weeks} weeks you spent about ${Math.round(f.everyday_spend)} on everyday things, roughly ${Math.round(f.weekly_everyday_pace ?? 0)} a week.${extra || ""}`,
+    watch: [{ item: "Look at the large charges listed under heads up." }],
+  });
+  const send = (o) => console.log(JSON.stringify({ is_error: false, total_cost_usd: 0.01, structured_output: o }));
+  if (om === "good") send(first());
+  else if (om === "invented-then-good") send(calls === 1 ? first(" That is up 47 percent.") : first());
+  else if (om === "advice") send(first(" Consider investing the difference."));
+  else if (om === "always-invented") send(first(" You spent 98765 on pets."));
+  else if (om === "crash") { console.error("boom"); process.exit(3); }
+  process.exit(0);
+}
+
 const asked = stdin
   .split("\n")
   .filter((l) => l.startsWith('{"id"'))
