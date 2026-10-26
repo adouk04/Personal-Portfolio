@@ -20,6 +20,13 @@ This file records how I worked with AI chat tools on the portfolio. It is intent
 
 > choose a different color wave. i like the layout of the site but use a  more appealing colorwave
 
+**Prompt 3 (Artifact 3)**
+
+> https://cfb3.github.io/TCSS490-26-AUTUMN/assignments/artifact-3/
+> https://cfb3.github.io/TCSS490-26-AUTUMN/weeks/week-3/
+> https://github.com/adouk04/Personal-Portfolio
+> complete the artifact for me
+
 ## Session 1 — October 11, 2026
 
 ### What I asked for
@@ -58,3 +65,11 @@ This file records how I worked with AI chat tools on the portfolio. It is intent
 - Artifacts 2–5 are clearly marked as ideas.
 - Required files and deployment metadata are present.
 - The page works at both desktop and mobile widths and remains usable without animation.
+
+## Session 2 — October 25, 2026 (Artifact 3)
+
+The full plan, decisions, and verification for this artifact are in [`explain-it-back/LOG.md`](explain-it-back/LOG.md). Summary:
+
+- Built *Explain It Back*, a terminal study tool that runs `claude -p` headless. The model judges an explanation and writes one exercise; plain code validates, retries, renders, and keeps history.
+- Filled in the Artifact 3 card in `site-data.js` and marked it Complete.
+- Fixed `tests/smoke.mjs`, which still expected only one completed artifact.

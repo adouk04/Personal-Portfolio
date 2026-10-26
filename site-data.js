@@ -50,16 +50,16 @@ window.PORTFOLIO_DATA = {
     },
     {
       number: "03",
-      status: "Idea",
+      status: "Complete",
       kind: "AI inside it",
       title: "Explain It Back",
       summary:
-        "A study companion that asks me to explain a technical concept, identifies the gaps in my explanation, and creates one focused follow-up exercise instead of flooding me with answers.",
-      tags: ["Generative AI", "Learning", "Feedback loops"],
-      reflectionLabel: "What I want to learn",
+        "A study companion that runs in the terminal. I explain a technical concept in my own words, Claude points out where the explanation is wrong or missing, and I get one follow-up exercise instead of a pile of answers. The model has one narrow job and no tools. Plain code checks the input, validates the model's answer, retries once, and keeps a history of my sessions.",
+      tags: ["Node.js", "Claude Code (claude -p)", "Structured output", "Testing"],
+      reflectionLabel: "What I learned",
       reflection:
-        "I want to explore how an AI feature can encourage real understanding without quietly doing the thinking for the learner.",
-      url: "",
+        "Keeping the model's job small was the most useful decision. Claude only judges the explanation and writes one exercise, so when a test failed it was easy to tell whether the model or my code was at fault, and I could test every failure path with a fake model for free. I also learned that a rule in a prompt, like not giving away the answer, is a request and not a guarantee. The code can enforce shape and size, but I still have to read the output myself.",
+      url: "https://github.com/adouk04/Personal-Portfolio/tree/main/explain-it-back",
     },
     {
       number: "04",

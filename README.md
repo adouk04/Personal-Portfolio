@@ -9,6 +9,7 @@ A static portfolio for TCSS 490: Generative AI and Software Development. The sit
 - [x] Artifact 1 completed with a reflection
 - [x] Ideas in the Artifact 2–5 placeholders
 - [x] AI collaboration log in [`BUILD_LOG.md`](BUILD_LOG.md)
+- [x] Artifact 3 built: [`explain-it-back/`](explain-it-back/) (with its own [`LOG.md`](explain-it-back/LOG.md))
 - [x] GitHub Pages deployment workflow
 
 ## Update the portfolio
@@ -34,6 +35,7 @@ Then visit `http://localhost:8000`.
 
 ```bash
 node tests/smoke.mjs
+node --test explain-it-back/test/explain.test.mjs
 ```
 
 ## Deployment
