@@ -58,7 +58,7 @@ window.PORTFOLIO_DATA = {
       tags: ["Node.js", "Claude Code (claude -p)", "Structured output", "Fintech"],
       reflectionLabel: "What I learned",
       reflection:
-        "The most useful decision was choosing what the model should never touch. Claude only sees transaction descriptions and picks a category. My code does the money math in cents, checks each label against whether money came in or went out, and flags anything the model was unsure about. A wrong label can't change a total, and I could test every failure with a fake model for free. When I ran it for real, the model marked the vague rows, like a Venmo payment and an unknown LLC, as low confidence instead of guessing, but I still have to skim the confident ones myself.",
+        "For this artifact, I wanted to create something practical that could help people better understand their spending habits. I decided to build a Spending Sorter that takes transactions from a CSV file, organizes them into categories, and identifies spending patterns. One thing I found interesting was how AI could handle categorizing transactions while regular code handled the calculations and verified the results. I also wanted to go beyond just sorting transactions by adding weekly spending estimates and flags for unusual charges. This project helped me better understand how AI can be combined with traditional programming to create something useful while still keeping accuracy and privacy in mind. One limitation I learned about is that AI can misclassify transactions, so having checks in place is important.",
       url: "https://github.com/adouk04/Personal-Portfolio/tree/main/spending-sorter",
     },
     {
