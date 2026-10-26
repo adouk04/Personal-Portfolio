@@ -68,8 +68,9 @@ This file records how I worked with AI chat tools on the portfolio. It is intent
 
 ## Session 2 — October 25, 2026 (Artifact 3)
 
-The full plan, decisions, and verification for this artifact are in [`explain-it-back/LOG.md`](explain-it-back/LOG.md). Summary:
+The full plan, decisions, and verification for this artifact are in [`spending-sorter/LOG.md`](spending-sorter/LOG.md). Summary:
 
-- Built *Explain It Back*, a terminal study tool that runs `claude -p` headless. The model judges an explanation and writes one exercise; plain code validates, retries, renders, and keeps history.
+- Built *Spending Sorter*, a terminal tool that runs `claude -p` headless. The model labels transaction descriptions (never amounts); plain code validates the labels, applies sign rules, does the money math in cents, and verifies the output file.
 - Filled in the Artifact 3 card in `site-data.js` and marked it Complete.
 - Fixed `tests/smoke.mjs`, which still expected only one completed artifact.
+- The first build for this artifact was a different idea (*Explain It Back*, from the placeholder card). I replaced it with this one; it remains in git history only.

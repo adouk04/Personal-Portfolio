@@ -52,14 +52,14 @@ window.PORTFOLIO_DATA = {
       number: "03",
       status: "Complete",
       kind: "AI inside it",
-      title: "Explain It Back",
+      title: "Spending Sorter",
       summary:
-        "A study companion that runs in the terminal. I explain a technical concept in my own words, Claude points out where the explanation is wrong or missing, and I get one follow-up exercise instead of a pile of answers. The model has one narrow job and no tools. Plain code checks the input, validates the model's answer, retries once, and keeps a history of my sessions.",
-      tags: ["Node.js", "Claude Code (claude -p)", "Structured output", "Testing"],
+        "A terminal tool that sorts a bank export into spending categories. Claude labels each transaction from its description only, never the amounts or dates. Plain code reads the file, checks every label, flags anything unsure or inconsistent with whether money came in or went out, computes all totals in cents, and verifies the output before saving it.",
+      tags: ["Node.js", "Claude Code (claude -p)", "Structured output", "Fintech"],
       reflectionLabel: "What I learned",
       reflection:
-        "Keeping the model's job small was the most useful decision. Claude only judges the explanation and writes one exercise, so when a test failed it was easy to tell whether the model or my code was at fault, and I could test every failure path with a fake model for free. I also learned that a rule in a prompt, like not giving away the answer, is a request and not a guarantee. The code can enforce shape and size, but I still have to read the output myself.",
-      url: "https://github.com/adouk04/Personal-Portfolio/tree/main/explain-it-back",
+        "The most useful decision was choosing what the model should never touch. Claude only sees transaction descriptions and picks a category. My code does the money math in cents, checks each label against whether money came in or went out, and flags anything the model was unsure about. A wrong label can't change a total, and I could test every failure with a fake model for free. When I ran it for real, the model marked the vague rows, like a Venmo payment and an unknown LLC, as low confidence instead of guessing, but I still have to skim the confident ones myself.",
+      url: "https://github.com/adouk04/Personal-Portfolio/tree/main/spending-sorter",
     },
     {
       number: "04",

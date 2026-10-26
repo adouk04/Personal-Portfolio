@@ -19,8 +19,8 @@ const checks = [
     "every completed artifact links to its repository",
   ],
   [
-    /title: "Explain It Back"[\s\S]*?explain-it-back/.test(data),
-    "Artifact 3 card links to the explain-it-back folder",
+    /title: "Spending Sorter"[\s\S]*?spending-sorter/.test(data),
+    "Artifact 3 card links to the spending-sorter folder",
   ],
   [
     (() => {
