@@ -13,7 +13,8 @@ const checks = [
   [css.includes("prefers-reduced-motion"), "reduced-motion styles exist"],
   [(data.match(/number: "0[1-5]"/g) || []).length === 5, "exactly five artifact records exist"],
   [(data.match(/status: "Complete"/g) || []).length === 3, "three artifacts are currently complete"],
-  [(data.match(/status: "Idea"/g) || []).length === 2, "two placeholder ideas remain"],
+  [data.includes('status: "In progress"'), "Artifact 4 is marked in progress"],
+  [(data.match(/status: "Idea"/g) || []).length === 1, "one placeholder idea remains"],
   [
     (data.match(/status: "Complete"[\s\S]*?url: "https:\/\/[^"]+"/g) || []).length === 3,
     "every completed artifact links to its repository",

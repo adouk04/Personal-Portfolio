@@ -63,16 +63,16 @@ window.PORTFOLIO_DATA = {
     },
     {
       number: "04",
-      status: "Idea",
+      status: "In progress",
       kind: "For someone else",
-      title: "RouteWatch Community",
+      title: "Resume Builder",
       summary:
-        "A lightweight reporting and insight tool for people who walk or commute through the city, helping a community share route concerns without turning safety into a vague score.",
-      tags: ["Civic tech", "Mobile", "Community data"],
-      reflectionLabel: "What I want to learn",
+        "A web app where a user sets up their resume once as a template, keeps a library of projects, work experience and education, and builds several tailored resumes by dragging entries onto a fixed-size page. Built with a teammate for a classmate who is job hunting. Week 1 status: Person B built the drag-and-drop resume page with a one-page overflow warning and PDF export (on mock data). I built login (email, Google and guest mode), the Supabase database with row-level security, the entry library and template setup. Next: connect the resume page to the real library and hand it to our user by Nov 8.",
+      tags: ["Next.js", "TypeScript", "Supabase", "dnd-kit", "Tailwind"],
+      reflectionLabel: "How it is going",
       reflection:
-        "I want to practice building for needs that are not my own and learn how to handle location-based claims with care and transparency.",
-      url: "",
+        "The hard part of building with a teammate was keeping two AI agents from colliding. A shared PLAN.md, CLAUDE.md and LOG.md gave both agents the same facts, folder ownership kept us out of each other's files, and rebasing onto my teammate's scaffold avoided a messy merge. Still to do: wire real data into the resume page and put it in front of our user.",
+      url: "https://github.com/alexalt9924/artifact4",
     },
     {
       number: "05",
