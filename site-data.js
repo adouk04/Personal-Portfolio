@@ -67,12 +67,13 @@ window.PORTFOLIO_DATA = {
       kind: "For someone else",
       title: "Resume Builder",
       summary:
-        "A web app where a user sets up their resume once as a template, keeps a library of projects, work experience and education, and builds several tailored resumes by dragging entries onto a fixed US Letter page. It warns and highlights the entries that don't fit when content runs past one page, and it exports a PDF that matches the screen. Built with a teammate for a classmate who is job hunting. The card links to the live site (try Continue as guest); the code, plan and log are in the team repo at github.com/alexalt9924/artifact4. I built login (email, Google and guest mode), the Supabase database with row-level security, the entry library, template setup, a live resume preview and the UI design. My teammate built the drag-and-drop resume page, the overflow check, PDF export and saved resumes.",
+        "A web app where a user sets up their resume once as a template, keeps a library of projects, work experience and education, and builds several tailored resumes by dragging entries onto a fixed US Letter page. It warns and highlights the entries that don't fit when content runs past one page, and it exports a PDF that matches the screen. Built with a teammate for a classmate who is job hunting. View website opens the live app (try Continue as guest); View artifact opens the team repo with the code, plan and log. I built login (email, Google and guest mode), the Supabase database with row-level security, the entry library, template setup, a live resume preview and the UI design. My teammate built the drag-and-drop resume page, the overflow check, PDF export and saved resumes.",
       tags: ["Next.js", "TypeScript", "Supabase", "dnd-kit", "Tailwind", "Vercel"],
       reflectionLabel: "What I learned",
       reflection:
         "The hard part of building with a teammate was keeping two AI agents from colliding. A shared PLAN.md, CLAUDE.md and LOG.md gave both agents the same facts, folder ownership kept us out of each other's files, and pull requests let us review each other's work. We still hit merge conflicts when we both edited the resume toolbar, and resolving them by reading both sides taught me to log changes to shared files right away. I also learned that slow navigation can have simple causes: seeding sample data one row at a time and an extra network call on every page load. Batching the inserts and checking the session locally fixed most of it. Because I didn't own the team repo, I forked it so I could deploy on Vercel's free tier.",
-      url: "https://artifact4.vercel.app",
+      url: "https://github.com/alexalt9924/artifact4",
+      siteUrl: "https://artifact4.vercel.app",
     },
     {
       number: "05",

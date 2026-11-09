@@ -85,6 +85,15 @@
       link.setAttribute("aria-disabled", "true");
       link.removeAttribute("href");
     }
+
+    // Optional second button for a deployed site, shown right next to "View artifact".
+    if (artifact.siteUrl) {
+      const site = link.cloneNode(false);
+      site.href = artifact.siteUrl;
+      site.classList.add("artifact-link-site");
+      site.innerHTML = 'View website <span aria-hidden="true">↗</span>';
+      link.after(site);
+    }
     list.append(fragment);
   });
 
